@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "9MQk11pcKejcAvdnm5P1U+U9BvD2dm1ro3vmVMvcTofqPfuytZGrfVz6+0lkX9dBLkMstM/QH1/Z/3JetZ5ndA==",
+  "success": true,
+  "projectFilePath": "/home/yavixo/Documentos/GitHub/apiautos/apiautos/apiautos.csproj",
+  "expectedPackageFiles": [
+    "/home/yavixo/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/home/yavixo/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/home/yavixo/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/home/yavixo/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/home/yavixo/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/home/yavixo/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using apiautos.Data;
+using apiautos.Data.Configuration;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.HttpsPolicy;
@@ -10,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
+using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 
 namespace apiautos
@@ -32,6 +35,13 @@ namespace apiautos
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "apiautos", Version = "v1" });
             });
+            services.Configure<AutomovilesDatabaseSettings>(
+                Configuration.GetSection(nameof(AutomovilesDatabaseSettings)));
+            
+            services.AddSingleton<IAutosSettings>(sp => 
+                sp.GetRequiredService<IOptions<AutomovilesDatabaseSettings>>().Value);
+
+            services.AddSingleton<Autodb>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

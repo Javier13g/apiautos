@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/yavixo/Documentos/GitHub/apiautos/apiautos/apiautos.csproj": {}
+    "/home/yavixo/Documentos/GitHub/apiautos/apiautos.csproj": {}
   },
   "projects": {
-    "/home/yavixo/Documentos/GitHub/apiautos/apiautos/apiautos.csproj": {
+    "/home/yavixo/Documentos/GitHub/apiautos/apiautos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/yavixo/Documentos/GitHub/apiautos/apiautos/apiautos.csproj",
+        "projectUniqueName": "/home/yavixo/Documentos/GitHub/apiautos/apiautos.csproj",
         "projectName": "apiautos",
-        "projectPath": "/home/yavixo/Documentos/GitHub/apiautos/apiautos/apiautos.csproj",
+        "projectPath": "/home/yavixo/Documentos/GitHub/apiautos/apiautos.csproj",
         "packagesPath": "/home/yavixo/.nuget/packages/",
-        "outputPath": "/home/yavixo/Documentos/GitHub/apiautos/apiautos/obj/",
+        "outputPath": "/home/yavixo/Documentos/GitHub/apiautos/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/yavixo/.nuget/NuGet/NuGet.Config"
@@ -38,6 +38,14 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Microsoft.VisualStudio.Web.CodeGeneration.Design": {
+              "target": "Package",
+              "version": "[5.0.2, )"
+            },
+            "MongoDB.Driver": {
+              "target": "Package",
+              "version": "[2.13.2, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[5.6.3, )"

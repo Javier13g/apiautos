@@ -27,7 +27,7 @@ namespace apiautos.Controllers
             return Ok(_autodb.Get());
         }
 
-        [HttpGet("{id:length(24)}", Name = "GetCliente")]
+        [HttpGet("{id:length(24)}", Name = "GetAutos")]
         public IActionResult GetById(string id)
         {
             var auto = _autodb.GetById(id);
@@ -42,7 +42,7 @@ namespace apiautos.Controllers
         public IActionResult Create(Marca auto)
         {
             _autodb.Create(auto);
-            return CreatedAtRoute("GetCLiente", new
+            return CreatedAtRoute("GetAutos", new
             {
                 id = auto.Id.ToString()
             }, auto);
